@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, #3917ff, #0076ff, #00a8ff, #00cfff, #54f1fd);
+    position: relative;
+}
+
+.content {
+    width: 280px;
+    height: 400px;
+    background-color: rgba(250, 250, 250, 0.5);
+    position: absolute;
+    left: 2%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.content h3 {
+    padding: 5px;
+    color:rgb(85, 85, 85);
+    text-transform: uppercase;
+}
+
+.db_content {
+    height: 350px;
+    overflow:auto;
+    background:rgba(240, 239, 239, 0.5);
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.db_content span {
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.entry {
+    font-style: italic;
+    font-size: 0.8rem;
+    color:rgb(66, 69, 255);
+    margin-left: 5px;
+}
+
+#amountPay, #cardNumber, 
+#cardHolder, #expDate,
+#secCode {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-left: 8px;
+}
+
+.line {
+    width: 200px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 10px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.459);
+    height: 450px;
+    width: 850px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    -webkit-box-shadow: 7px 6px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 16px -4px rgba(0,0,0,0.75);
+}
+
+.over {
+    position: absolute;
+    left: 0%;
+    background-color: rgba(21, 96, 209, 0.9);
+    z-index: 2;
+    height: 450px;
+    width: 350px;
+    border-radius: 10px 0px 0px 10px;
+    clip-path: polygon(0 0, 76% 0, 37% 100%, 0% 100%);
+}
+
+.card {
+    width: 180px;
+    height: 120px;
+    background-image: linear-gradient(to right, #5becf1, #00d4f7, #00b9fc, #009cfa, #127aeb);
+    z-index: 3;
+    position: absolute;
+    bottom: 35%;
+    left: 15%;
+    border-radius: 10px;
+    -webkit-box-shadow: 14px 13px 21px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 13px 21px -11px rgba(0,0,0,0.75);
+    box-shadow: 14px 13px 21px -11px rgba(0,0,0,0.75);
+}
+
+.red, .orange {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.orange {
+    background-color: rgba(250, 189, 76, 0.9);
+    position: absolute;
+    right: 18%;
+    top: 10%;
+    z-index: 8;
+}
+
+.red {
+    background-color: rgba(253, 149, 137, 0.9);
+    z-index: 7;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+}
+
+.card h3 {
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    bottom: 32%;
+    left: 15%;
+}
+
+.card h4 {
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 12%;
+    left: 15%;
+    color:rgb(100, 100, 100)
+
+}
+
+.form {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.section {
+    margin: 10px, 50px 0px 0px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.section input {
+    width: 30%;
+    height: 100%;
+    color: #2a90d8;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-left: 5px;
+    background-color: transparent;
+    margin: 0px 0px 0px 200px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(33, 167, 245);
+}
+
+input::placeholder {
+    color:rgb(139, 139, 139)
+}
+
+
+input:focus {
+    color: rgb(42, 39, 243);
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+
+.section label {
+    margin: 20px 10px 0px 0px;
+}
+
+.section span {
+    margin-left: 200px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    margin: 15px 15px 0px 217px;
+    width: 30%;
+    height: 35px;
+    background-color: rgb(33, 167, 245);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+}
+
+button:active{
+    background-color: rgb(29, 143, 209);
+    position: relative;
+    top: 1px;
+}
+
+button:hover{
+    background-color: rgb(29, 143, 209);
+    font-size: 0.9rem;
+}

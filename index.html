@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="content"> 
+        <h3>Database Content</h3>
+        <div class="db_content">
+            
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <div class="over"></div>
+        <div class="card">
+            <div class="red"></div>
+            <div class="orange"></div>
+            <img src="chip.png" alt="">
+            <h3>.... .... .... ....</h3>
+            <h4>08 / 21</h4>
+        </div>
+            <div class="form">
+
+                <div class="section">
+
+      
+                    <label class= "label" id="amountText" > <span class="amount">Amount: </span></label> 
+                    <input class="input" type="number" id="amount" placeholder="Amount to pay" required>
+           
+                    <label class= "label" id="number"> <span class="card_no">Credit Card Number: </span></label>
+                    <input class="input" type="number" id="card_no" placeholder="4539393950884198" required>
+        
+                    <label class= "label" id="name"> <span class="card_name">Credit Card Holder Name: </span></label>
+                    <input class="input" type="text" id="card_holder" placeholder="First name   Last name" required>
+
+                    <label class= "label" id="expiration"> <span class="expdate">Expiration date: </span></label> 
+                    <input class="input" type="month" id="exp_date" placeholder="Expiration date.." required>
+
+                    <label class= "label" id="expiration"> <span class="code"> Security code: </span></label> 
+                    <input class="input" type="text"  id="security_code" placeholder="458">
+
+                    <button type="button">PAY NOW</button>
+               
+                </div>
+
+            </div>
+              
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
