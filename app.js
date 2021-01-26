@@ -34,7 +34,7 @@ const retrieveData = () => {
         return;
     }
 
-    axios.post('http://localhost:2000/data', {
+    axios.post('https://creditcardform.herokuapp.com/data', {
         amount: amount.value,
         creditCardNo: cardNo.value,
         creditCardHolder: cardHolder.value,
@@ -54,7 +54,7 @@ const retrieveData = () => {
 btn.addEventListener('click', retrieveData);
 
 async function data() {
-    let data =  await fetch('http://localhost:2000/data');
+    let data =  await fetch('https://creditcardform.herokuapp.com/data');
     let res = await data.json()
     console.log(res)
 
