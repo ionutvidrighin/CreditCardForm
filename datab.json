@@ -6,23 +6,9 @@
       "creditCardHolder": "Test Tes1",
       "expDate": "2021-08",
       "securityCode": "789",
-      "id": 1
-    },
-    {
-      "amount": "55",
-      "creditCardNo": "4789516789547896",
-      "creditCardHolder": "Cristian Toma",
-      "expDate": "2021-08",
-      "securityCode": "789",
-      "id": 1
-    },
-    {
-      "amount": "48",
-      "creditCardNo": "4789516789547896",
-      "creditCardHolder": "Alex Popescu",
-      "expDate": "2021-08",
-      "securityCode": "789",
+      "source": "../audio/music.mp3", 
       "id": 1
     }
+   
   ]
 }
